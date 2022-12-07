@@ -1,0 +1,60 @@
+.header {
+  background-color: $darkBlue;
+
+  @include flex($align: center);
+}
+
+.header-title {
+  margin: auto;
+  color: #fff;
+}
+
+.nav-mobil {
+  display: block;
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.nav-mobile-trigger {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+
+  @include flex($direction: column);
+
+  span {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    transition: all 200ms ease-in-out;
+
+    &:nth-child(1) {
+      top: 10px;
+    }
+    &:nth-child(2) {
+      top: 17px;
+    }
+    &:nth-child(3) {
+      top: 24px;
+    }
+  }
+
+  &.is-clicked {
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+}
