@@ -3,7 +3,7 @@
   width: 100%;
   height: 182px;
 
-  @media (min-width: $desktop) {
+  @include devices(desktop) {
     height: 400px;
   }
 
@@ -32,7 +32,7 @@
     bottom: 6rem;
     left: 3rem;
 
-    @media (min-width: $desktop) {
+    @include devices(desktop) {
       bottom: 14rem;
       left: 11rem;
       font-size: 64px;
@@ -43,7 +43,7 @@
     bottom: 4.8rem;
     left: 6rem;
 
-    @media (min-width: $desktop) {
+    @include devices(desktop) {
       bottom: 10rem;
       left: 14rem;
       font-size: 64px;

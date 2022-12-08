@@ -2,6 +2,14 @@
   border: $height solid $color;
 }
 
+@mixin devices($breakpoint) {
+  @if $breakpoint == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+}
+
 @mixin flex(
   $direction: row,
   $justify: flex-start,
