@@ -1,0 +1,36 @@
+.service-callout {
+  margin-bottom: 2rem;
+}
+
+.service-img {
+  width: 100%;
+  height: 200px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.service-button-wrapper {
+  background-color: $darkBlue;
+  height: 100px;
+
+  @include flex(column, center, center);
+  gap: 1rem;
+
+  h3 {
+    color: $brand;
+  }
+}
+
+.service-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-size: $mobilePSize;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+}

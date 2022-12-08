@@ -29,6 +29,11 @@ h3 {
   font-size: 16px;
 }
 
+p {
+  font-size: $mobilePSize;
+  line-height: 1.2rem;
+}
+
 .content-wrapper {
   max-width: 1080px;
   padding: 0 1rem;

@@ -84,6 +84,11 @@ h3 {
   font-size: 16px;
 }
 
+p {
+  font-size: 12px;
+  line-height: 1.2rem;
+}
+
 .content-wrapper {
   max-width: 1080px;
   padding: 0 1rem;
@@ -298,4 +303,49 @@ h3 {
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
+  margin-top: 4rem;
+}
+@media (min-width: 980px) {
+  .text-element {
+    margin-top: 6rem;
+  }
+}
+
+.service-callout {
+  margin-bottom: 2rem;
+}
+
+.service-img {
+  width: 100%;
+  height: 200px;
+}
+.service-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.service-button-wrapper {
+  background-color: #282634;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.service-button-wrapper h3 {
+  color: #f63d53;
+}
+
+.service-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-size: 12px;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
