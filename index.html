@@ -5,30 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WOX by morons for morons</title>
-    <link rel="stylesheet" href="styles/main.css" />
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="/content/images/STEWPID.svg"
+              alt="Company logo"
+              width="100"
+              height="100"
+          /></a>
+        </div>
+
+        <div class="header-title">
+          <h1>Home</h1>
+        </div>
+
+        <div class="nav-mobile-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!--Mobile Nav-->
+        <nav class="nav-mobile">
+          <ul class="nav-mobile-list">
+            <li class="nav-mobile-list-item is-current">
+              <a href="/pages/index.html">Home</a>
+            </li>
+            <li class="nav-mobile-list-item">
+              <a href="/pages/about.html">About</a>
+            </li>
+            <li class="nav-mobile-list-item">
+              <a href="/pages/services.html">Services</a>
+            </li>
+            <li class="nav-mobile-list-item">
+              <a href="/pages/reference.html">Reference</a>
+            </li>
+            <li class="nav-mobile-list-item">
+              <a href="/pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--Desktop Nav-->
+        <nav class="nav-desktop">
+          <ul class="nav-desktop-list">
+            <li class="nav-desktop-list-item is-current">
+              <a href="/pages/index.html">Home</a>
+            </li>
+            <li class="nav-desktop-list-item">
+              <a href="/pages/about.html">About</a>
+            </li>
+            <li class="nav-desktop-list-item">
+              <a href="/pages/services.html">Services</a>
+            </li>
+            <li class="nav-desktop-list-item">
+              <a href="/pages/reference.html">Reference</a>
+            </li>
+            <li class="nav-desktop-list-item">
+              <a href="/pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="hero">
         <img
-          src="/images/STEWPID.svg"
-          alt="Company logo"
-          width="100"
-          height="100"
+          src="/content/images/hero-image.jpg"
+          alt="Image of Stockholm with a beautiful sunset"
         />
+        <h2 class="hero-title">when morons</h2>
+        <h2 class="hero-title">create a company...</h2>
       </div>
 
-      <div class="header-title">
-        <h1>Home</h1>
-      </div>
+      <main class="main-content"></main>
 
-      <div class="nav-mobile-trigger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="nav-mobil"></nav>
-    </header>
+      <footer class="footer"></footer>
+    </div>
   </body>
 </html>

@@ -14,3 +14,7 @@
   align-items: $align;
   flex-wrap: $wrap;
 }
+
+@mixin font($font: "Roboto") {
+  font-family: $font, Arial, Helvetica, sans-serif;
+}
