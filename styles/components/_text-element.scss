@@ -3,9 +3,19 @@
   padding-bottom: 2rem;
   text-align: center;
 
-  @include marginTop(4rem);
+  &.history-background {
+    background-color: $darkBlue;
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    h3 {
+      color: $brand;
+      padding-bottom: 1rem;
+    }
+  }
 
   @include devices(desktop) {
-    @include marginTop(6rem);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
