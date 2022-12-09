@@ -19,23 +19,46 @@ a {
 
 h1 {
   font-size: 24px;
+
+  @include devices(desktop) {
+    font-size: 26px;
+  }
 }
 
 h2 {
   font-size: 20px;
+
+  @include devices(desktop) {
+    font-size: 24px;
+  }
 }
 
 h3 {
   font-size: 16px;
+
+  @include devices(desktop) {
+    font-size: 20px;
+  }
 }
 
 p {
   font-size: $mobilePSize;
   line-height: 1.2rem;
+
+  @include devices(desktop) {
+    font-size: $desktopPSize;
+  }
+}
+
+nav {
+  ul {
+    list-style: none;
+  }
 }
 
 .content-wrapper {
   max-width: 1080px;
   padding: 0 1rem;
   margin: auto;
+  position: relative;
 }

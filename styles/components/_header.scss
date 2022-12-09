@@ -131,18 +131,25 @@
 .nav-desktop-list {
   list-style: none;
   gap: 1rem;
-  font-size: larger;
-  @include flex();
+  font-size: 20px;
+
+  @include flex($align: center);
 }
 
 .nav-desktop-list-item {
+  a {
+    transition: all 500ms ease-in-out;
+  }
+
   &.is-current {
     a {
       color: $brand;
+      font-size: 26px;
     }
   }
 
   a:hover {
     color: $brand;
+    font-size: 26px;
   }
 }
