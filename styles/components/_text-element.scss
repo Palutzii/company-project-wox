@@ -8,6 +8,11 @@
     color: #fff;
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    @include devices(desktop) {
+      border-radius: 1rem;
+    }
+
     h3 {
       color: $brand;
       padding-bottom: 1rem;

@@ -1,0 +1,66 @@
+.employee-container {
+  text-align: center;
+}
+
+.employee-title {
+  color: $darkBlue;
+  padding-bottom: 1rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  @include devices(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include devices(desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.profile-wrapper {
+  position: relative;
+  //   margin-bottom: 2rem;
+}
+
+.profile-img {
+  position: relative;
+  margin-left: auto;
+  height: 400px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+}
+
+.profile-info {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: $darkBlue;
+  color: #fff;
+  height: 160px;
+  padding: 10px;
+  text-align: left;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+
+  :not(:first-child) {
+    margin-top: 5px;
+  }
+
+  :first-child {
+    color: $brand;
+  }
+
+  :last-child {
+    margin-top: 10px;
+  }
+}

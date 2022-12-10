@@ -8,6 +8,12 @@
       @content;
     }
   }
+
+  @if $breakpoint == tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  }
 }
 
 @mixin flex(
