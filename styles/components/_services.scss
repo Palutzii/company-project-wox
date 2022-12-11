@@ -1,0 +1,87 @@
+.services-wrapper {
+  //   background-color: $darkBlue;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @include devices(desktop) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    gap: 3rem;
+  }
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @include devices(desktop) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+.service {
+  display: flex;
+  color: $darkBlue;
+  gap: 1rem;
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  @include devices(desktop) {
+    gap: 1.5rem;
+  }
+}
+
+.icon-wrapper {
+  width: 60px;
+}
+
+.service-element {
+  width: 100%;
+  .text-element {
+    padding-top: 0.5rem;
+    text-align: left;
+
+    @include devices(desktop) {
+      padding-bottom: 0;
+      width: 80%;
+    }
+  }
+
+  h3 {
+    color: $brand;
+  }
+}
+
+.service-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 1rem;
+
+  a {
+    display: flex;
+    background-color: $darkBlue;
+    color: $brand;
+    width: 7rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+
+  @include devices(desktop) {
+    p {
+      font-size: clamp(17px, 18px, 20px);
+    }
+  }
+}

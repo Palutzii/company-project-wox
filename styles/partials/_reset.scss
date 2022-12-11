@@ -42,11 +42,11 @@ h3 {
 }
 
 p {
-  font-size: $mobilePSize;
+  font-size: clamp($mobilePSize, 4vw, 15px);
   line-height: 1.2rem;
 
   @include devices(desktop) {
-    font-size: $desktopPSize;
+    font-size: clamp(17px, 4vw, $desktopPSize);
   }
 }
 
