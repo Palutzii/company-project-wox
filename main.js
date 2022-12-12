@@ -24,10 +24,10 @@ if (swiper) {
     slidesPerView: 1,
     spaceBetween: 20,
     centeredSlider: false,
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
 
     pagination: {
       el: ".swiper-pagination",
