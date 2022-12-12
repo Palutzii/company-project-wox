@@ -1,3 +1,7 @@
+.reference-content {
+  margin-top: 1rem;
+}
+
 .review-element {
   @include flex(column, center, center);
 
@@ -15,11 +19,9 @@
   width: 100%;
   height: 100%;
   margin-bottom: 2rem;
-  //border-top: 2px solid $darkBlue;
 
   @include devices(desktop) {
     width: 100%;
-    //height: 100%;
     border-top: none;
   }
 }
@@ -44,7 +46,6 @@
   text-align: center;
   color: $darkBlue;
   background: none;
-  //padding: 1rem;
   margin-right: 1px;
 
   @include devices(desktop) {
@@ -57,11 +58,22 @@
 
 .swiper-inner {
   padding: 1rem;
-  color: #fff;
-  /*
-  border: 2px solid $darkBlue;
-  border-top-width: 4px;
-  border-top-color: $brand;*/
+
+  p {
+    color: #fff;
+  }
+
+  .review-who {
+    text-align: right;
+    color: $brand;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+
+    @include devices(desktop) {
+      margin-right: 10rem;
+      margin-bottom: 2rem;
+    }
+  }
   border-radius: 0.5rem;
   background: rgba($color: $darkBlue, $alpha: 0.8);
 }
@@ -71,13 +83,8 @@
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   position: relative;
   margin-top: 0;
-  //margin-bottom: 1rem;
   left: auto;
   transform: none;
-
-  @include devices(desktop) {
-    //margin-top: 2rem;
-  }
 }
 
 .swiper-arrows {
@@ -99,28 +106,6 @@
 
   @include devices(desktop) {
     display: block;
-  }
-}
-
-/*
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-  right: 28rem;
-}
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-  left: 28rem;
-}*/
-
-.review-who {
-  text-align: right;
-  color: $brand;
-  margin-bottom: 1rem;
-  padding-right: 1rem;
-
-  @include devices(desktop) {
-    margin-right: 10rem;
-    margin-bottom: 2rem;
   }
 }
 

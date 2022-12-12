@@ -1,5 +1,4 @@
 .services-wrapper {
-  //   background-color: $darkBlue;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding-top: 2rem;
@@ -18,6 +17,13 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+
+  @include devices(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 
   @include devices(desktop) {
     grid-template-columns: repeat(2, 1fr);

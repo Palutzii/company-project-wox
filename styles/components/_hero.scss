@@ -49,6 +49,7 @@
 
     @include devices(tablet) {
       font-size: 32px;
+      bottom: 4rem;
     }
 
     @include devices(desktop) {

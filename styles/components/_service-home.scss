@@ -96,3 +96,14 @@
   padding: 0.4rem 1rem;
   border-radius: 0.5rem;
 }
+
+.home-grid {
+  @include devices(tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include devices(desktop) {
+    display: block;
+  }
+}

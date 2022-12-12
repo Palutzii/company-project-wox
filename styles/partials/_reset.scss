@@ -42,11 +42,15 @@ h3 {
 }
 
 p {
-  font-size: clamp($mobilePSize, 4vw, 15px);
+  font-size: clamp($mobilePSize, 4vw, 14px);
   line-height: 1.2rem;
 
+  @include devices(tablet) {
+    font-size: clamp(14px, 15.5px, 16px);
+  }
+
   @include devices(desktop) {
-    font-size: clamp(17px, 4vw, $desktopPSize);
+    font-size: clamp(16px, 4vw, $desktopPSize);
   }
 }
 
@@ -61,4 +65,8 @@ nav {
   padding: 0 1rem;
   margin: auto;
   position: relative;
+
+  @include devices(tablet) {
+    padding: 0 3rem;
+  }
 }
