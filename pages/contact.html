@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WOX - Contact Us</title>
-    <script src="../main.js" defer></script>
+    <script src="../Javascript/main.js" type="module" defer></script>
     <link rel="stylesheet" href="../styles/main.css" />
 
     <!--Favicon-->
@@ -108,7 +108,90 @@
     </section>
 
     <!--Main content-->
+    <main class="contact-content">
+      <article class="service-callout content-wrapper">
+        <div class="service-img">
+          <img
+            src="../content/images/Office-building2.jpg"
+            alt="Company's HQ building"
+          />
+        </div>
+        <div class="service-button-wrapper">
+          <h2>Adress</h2>
+          <p class="contact-company">Company name: WOX AB</p>
+          <p class="contact-street">Street: Street 1</p>
+          <p class="contact-postal-code">Postal Code: 123 45</p>
+          <p class="phone">Phone: 123 456 78 90</p>
+        </div>
+      </article>
+      <section class="form-section content-wrapper">
+        <form action="input" class="form-content">
+          <fieldset class="form-wrapper">
+            <div class="name-input-group">
+              <div class="name-input">
+                <label for="fname">First name*:</label>
+                <input
+                  type="text"
+                  name="fname"
+                  placeholder="Kevin"
+                  id="fname"
+                  class="form-name"
+                  required
+                />
+              </div>
+              <div class="name-input">
+                <label for="lname">Last name*:</label>
+                <input
+                  type="text"
+                  name="lname"
+                  placeholder="Kevinsson"
+                  id="lname"
+                  class="form-name"
+                  required
+                />
+              </div>
+            </div>
 
+            <div class="email-input">
+              <label for="ename">Email*:</label>
+              <input
+                type="email"
+                name="ename"
+                placeholder="kevinkevinsson@xxx.com"
+                id="ename"
+                class="form-email"
+                required
+              />
+            </div>
+
+            <div class="subject-input">
+              <label for="sname">Subject*:</label>
+              <select name="sname" id="sname" class="form-subject">
+                <option value="" selected hidden></option>
+                <option value="">Purchase of service</option>
+                <option value="">Questions about the company</option>
+                <option value="">Feedback on website</option>
+              </select>
+            </div>
+
+            <div class="textbox-input">
+              <label for="fdescribe">What can we help you with?</label>
+              <textarea
+                name="fdescribe"
+                id="fdescribe"
+                class="form-textarea"
+                cols="48"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <div class="submit-input">
+              <input type="submit" value="Submit" class="form-submit" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
     <!--Footer-->
     <footer class="footer">
       <div class="footer-main-content content-wrapper">
