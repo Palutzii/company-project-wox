@@ -1,0 +1,135 @@
+.review-element {
+  @include flex(column, center, center);
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  h2 {
+    margin-top: 2rem;
+    color: $darkBlue;
+    padding: 1rem;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+  //border-top: 2px solid $darkBlue;
+
+  @include devices(desktop) {
+    width: 100%;
+    //height: 100%;
+    border-top: none;
+  }
+}
+
+.swiper-wrapper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+  color: $darkBlue;
+  background: none;
+  //padding: 1rem;
+  margin-right: 1px;
+
+  @include devices(desktop) {
+    .text-element {
+      width: 60%;
+      margin: auto;
+    }
+  }
+}
+
+.swiper-inner {
+  padding: 1rem;
+  color: #fff;
+  /*
+  border: 2px solid $darkBlue;
+  border-top-width: 4px;
+  border-top-color: $brand;*/
+  border-radius: 0.5rem;
+  background: rgba($color: $darkBlue, $alpha: 0.8);
+}
+
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  position: relative;
+  margin-top: 0;
+  //margin-bottom: 1rem;
+  left: auto;
+  transform: none;
+
+  @include devices(desktop) {
+    //margin-top: 2rem;
+  }
+}
+
+.swiper-arrows {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative;
+  display: none;
+  color: $darkBlue;
+  top: auto;
+  left: auto;
+  right: auto;
+  transform: none;
+
+  @include devices(desktop) {
+    display: block;
+  }
+}
+
+/*
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 28rem;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 28rem;
+}*/
+
+.review-who {
+  text-align: right;
+  color: $brand;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+
+  @include devices(desktop) {
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.review-score {
+  margin: auto;
+  text-align: center;
+
+  @include devices(desktop) {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+}
