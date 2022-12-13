@@ -46,7 +46,7 @@ p {
   line-height: 1.2rem;
 
   @include devices(tablet) {
-    font-size: clamp(14px, 15.5px, 16px);
+    font-size: clamp(14px, 4vw, 16px);
   }
 
   @include devices(desktop) {
