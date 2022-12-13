@@ -16,8 +16,6 @@ if (trigger) {
   });
 }
 
-console.log("test");
-
 var swiper = document.querySelector(".swiper");
 if (swiper) {
   // init Swiper
