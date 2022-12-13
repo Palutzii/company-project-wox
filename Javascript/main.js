@@ -25,7 +25,7 @@ if (swiper) {
     spaceBetween: 20,
     centeredSlider: false,
     autoplay: {
-      delay: 5000,
+      delay: 7500,
       disableOnInteraction: false,
     },
 
