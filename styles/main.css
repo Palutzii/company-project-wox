@@ -962,6 +962,7 @@ nav ul {
 }
 .textbox-input .form-textarea {
   width: 100%;
+  resize: vertical;
 }
 
 .submit-input {
