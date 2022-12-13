@@ -14,9 +14,9 @@
   border-radius: 0.47rem;
   border-color: $darkBlue;
   border-top: 5px solid $brand;
-  box-shadow: 0px 0px 13px 6px rgba($darkBlue, 0.75);
-  -webkit-box-shadow: 0px 0px 13px 6px rgba($darkBlue, 0.75);
-  -moz-box-shadow: 0px 0px 13px 6px rgba($darkBlue, 0.75);
+  box-shadow: 0px 0px 13px -2px rgba($darkBlue, 0.75);
+  -webkit-box-shadow: 0px 0px 13px -2px rgba($darkBlue, 0.75);
+  -moz-box-shadow: 0px 0px 13px -2px rgba($darkBlue, 0.75);
   padding: 1rem;
 }
 
