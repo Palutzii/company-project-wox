@@ -40,15 +40,21 @@
     border: none;
   }
 
+  a {
+    color: $darkBlue;
+  }
+
   &.is-current {
     a {
       color: $darkBlue;
+      font-weight: 600;
+      text-decoration: underline;
     }
   }
 
   @include devices(desktop) {
     a:hover {
-      color: $darkBlue;
+      text-decoration: underline;
     }
   }
 }
